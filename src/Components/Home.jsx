@@ -1,9 +1,9 @@
 import React from "react";
 import CV from "../assets/CV.pdf";
 import HeaderImage from "../assets/header.jpg";
+import { Link } from "react-router-dom";
 
 function Home() {
-
   return (
     <section className="featured-box wrapper" id="home">
       <div className="featured-text">
@@ -23,39 +23,42 @@ function Home() {
           </p>
         </div>
         <div className="featured-text-btn">
-          <a href={CV}>
+          <Link href={CV}>
             <button className="btn">
               Download CV <i className="uil uil-import"></i>
             </button>
-          </a>
+          </Link>
         </div>
         <div className="social_icons">
           <div className="icon">
-            <a
+            <Link
               href="https://in.linkedin.com/in/shivam-kopare-1657b323a/"
               target="_blank"
-              style={{ color: "hsl(0, 0%, 40%)" }} rel="noreferrer"
+              style={{ color: "hsl(0, 0%, 40%)" }}
+              rel="noreferrer"
             >
               <i className="uil uil-linkedin-alt"></i>
-            </a>
+            </Link>
           </div>
           <div className="icon">
-            <a
+            <Link
               href="https://github.com/shivamkopare82"
               target="_blank"
-              style={{ color: "hsl(0, 0%, 40%)" }} rel="noreferrer"
+              style={{ color: "hsl(0, 0%, 40%)" }}
+              rel="noreferrer"
             >
               <i className="uil uil-github-alt"></i>
-            </a>
+            </Link>
           </div>
           <div className="icon">
-            <a
+            <Link
               href="https://www.instagram.com/shivam_kopare/"
               target="_blank"
-              style={{ color: "hsl(0, 0%, 40%)" }} rel="noreferrer"
+              style={{ color: "hsl(0, 0%, 40%)" }}
+              rel="noreferrer"
             >
               <i className="uil uil-instagram"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

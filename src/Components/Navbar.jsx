@@ -1,5 +1,6 @@
 import React from "react";
 import CV from "../assets/CV.pdf";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   function myMenuFunction() {
@@ -42,37 +43,37 @@ function Navbar() {
       <div className="nav-menu" id="myNavMenu">
         <ul className="nav_menu_list">
           <li className="nav_list">
-            <a href="#home" className="nav-link active-link">
+            <Link href="#home" className="nav-link active-link">
               Home
-            </a>
+            </Link>
             <div className="circle"></div>
           </li>
           <li className="nav_list">
-            <a href="#about" className="nav-link">
+            <Link href="#about" className="nav-link">
               About
-            </a>
+            </Link>
             <div className="circle"></div>
           </li>
           <li className="nav_list">
-            <a href="#projects" className="nav-link">
+            <Link href="#projects" className="nav-link">
               Projects
-            </a>
+            </Link>
             <div className="circle"></div>
           </li>
           <li className="nav_list">
-            <a href="#contact" className="nav-link">
+            <Link href="#contact" className="nav-link">
               Contact
-            </a>
+            </Link>
             <div className="circle"></div>
           </li>
         </ul>
       </div>
       <div className="nav-button">
-        <a href={CV}>
+        <Link href={CV}>
           <button className="btn">
             Download CV <i className="uil uil-import"></i>
           </button>
-        </a>
+        </Link>
       </div>
       <div className="nav-menu-btn">
         <i className="uil uil-bars" onClick={myMenuFunction}></i>
