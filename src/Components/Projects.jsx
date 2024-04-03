@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Projects() {
   return (
@@ -12,36 +11,36 @@ function Projects() {
           <i className="fa-solid fa-video"></i>
           <h3>Netflix-Clone</h3>
           <label>
-            <Link
+            <a
               href="https://github.com/shivamkopare82/Netflix-Clone.git"
               target="_blank" rel="noreferrer"
             >
               Github <i className="fa-solid fa-link"></i>
-            </Link>
+            </a>
           </label>
         </div>
         <div className="project-box">
           <i className="fa-solid fa-cloud-showers-heavy"></i>
           <h3>Cloud Burst Prediction System</h3>
           <label>
-            <Link
+            <a
               href="https://github.com/shivamkopare82/Cloud-Burst-Prediction-System.git"
               target="_blank" rel="noreferrer"
             >
               Github <i className="fa-solid fa-link"></i>
-            </Link>
+            </a>
           </label>
         </div>
         <div className="project-box">
           <i className="fa-regular fa-calendar-check"></i>
           <h3>College Event Management System</h3>
           <label>
-            <Link
+            <a
               href="https://github.com/shivamkopare82/College-Event-Management-System.git"
               target="_blank" rel="noreferrer"
             >
               Github <i className="fa-solid fa-link"></i>
-            </Link>
+            </a>
           </label>
         </div>
       </div>
